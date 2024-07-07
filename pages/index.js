@@ -86,7 +86,7 @@ export default function Home() {
                       key={index}
                       src={images[index].src.landscape}
                       height={500}
-                      width={830}
+                      width={800}
                       alt={`Image ${index}`}
                       className={styles.img}
                     />
