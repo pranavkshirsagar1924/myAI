@@ -1,0 +1,100 @@
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  justify-content: space-between;
+}
+.blogBox{
+  width: 70%;
+  height: 100vh;
+  padding: 3vh;
+  overflow: auto;
+  font-size: 20px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.par{
+  animation: para 0.5s linear 1;
+}
+@keyframes para {
+  from{
+    transform: translateY(-10);
+  }to{
+    transform: translateY(0);
+  }
+}
+.linkBox{
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  border-left:1px solid #ffffff ;
+}
+.query{
+  width: 100%;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 3px;
+  cursor: pointer;
+  background-color: rgb(44, 44, 44);
+}
+.img{
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.imgBox{
+  width:auto;
+  height: auto;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 40vh;
+  aspect-ratio: 1;
+  background: #ffffff;
+  border-radius: 50%;
+  animation: l1 3s infinite linear;
+}
+@keyframes l1{
+  12.5% {border-radius: 37% 63% 70% 30% / 30% 62% 38% 70%}
+  25%   {border-radius: 50% 50% 70% 30% / 52% 62% 38% 48%}
+  37.5% {border-radius: 33% 67% 18% 82% / 52% 75% 25% 48%}
+  50%   {border-radius: 73% 27% 18% 82% / 52% 32% 68% 48%}
+  62.5% {border-radius: 73% 27% 74% 26% / 64% 32% 68% 36%}
+  75%   {border-radius: 84% 16% 15% 85% / 55% 79% 21% 45%}
+  87.5% {border-radius: 12% 88% 69% 31% / 10% 66% 34% 90%}
+}
+.vio{
+  width: 50%;
+  height:50%;
+}
+@media screen and (max-width:760px) {
+  .main{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .blogBox{
+    width: 100%;
+    height: auto;
+  }
+  .linkBox{
+    width: 100%;
+    height: fit-content;
+  }
+}
